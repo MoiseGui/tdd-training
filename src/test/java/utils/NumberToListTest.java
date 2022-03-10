@@ -10,4 +10,9 @@ class NumberToListTest {
         assertThrows(IllegalArgumentException.class, () -> NumberToList.convert(0));
     }
 
+    @Test
+    public void ShouldThrowExceptionWhenNumberIsNegative(){
+        assertThrows(IllegalArgumentException.class, () -> NumberToList.convert(-1));
+    }
+
 }
