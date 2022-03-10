@@ -35,4 +35,10 @@ public class FizzBuzzConverterTest {
         String result = FizzBuzzConverter.convert(30);
         assertEquals(result, "FizzBuzz");
     }
+
+    @Test
+    public void shoulReturnTheNumberIfNotMultipleOf3Or5Or15(){
+        String result = FizzBuzzConverter.convert(8);
+        assertEquals(result, "8");
+    }
 }
