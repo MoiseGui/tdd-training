@@ -3,6 +3,8 @@ package utils;
 import java.util.List;
 
 public class NumberToList {
+    private NumberToList() {
+    }
 
     public static List<Integer> convert(int i) throws IllegalArgumentException{
         if(i <= 0) {
