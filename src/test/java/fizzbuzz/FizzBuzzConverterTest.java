@@ -16,4 +16,10 @@ public class FizzBuzzConverterTest {
         String result = FizzBuzzConverter.convert(5);
         assertEquals(result, "Buzz");
     }
+
+    @Test
+    public void shoulReturnFizzWhenGivenAMultipleOf3(){
+        String result = FizzBuzzConverter.convert(9);
+        assertEquals(result, "Fizz");
+    }
 }
