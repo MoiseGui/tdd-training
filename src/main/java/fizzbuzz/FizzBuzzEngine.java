@@ -15,6 +15,9 @@ public class FizzBuzzEngine {
         String result = "";
         for (Integer integer : list) {
             result += integer + "=>" + FizzBuzzConverter.convert(integer);
+            if(integer != list.get(list.size()-1)) {
+                result += "\n";
+            }
         }
 
         System.out.print(result);

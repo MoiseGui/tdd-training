@@ -33,4 +33,11 @@ class FizzBuzzEngineTest {
         assertEquals("1=>1", outContent.toString());
     }
 
+    @Test
+    void shoudPrintCorrectOutputForNumber15() {
+        String expected = "1=>1\n2=>2\n3=>Fizz\n4=>4\n5=>Buzz\n6=>Fizz\n7=>7\n8=>8\n9=>Fizz\n10=>Buzz\n11=>11\n12=>Fizz\n13=>13\n14=>14\n15=>FizzBuzz";
+        FizzBuzzEngine.fizzBuzz(15);
+        assertEquals(expected, outContent.toString());
+    }
+
 }
