@@ -22,4 +22,10 @@ public class FizzBuzzConverterTest {
         String result = FizzBuzzConverter.convert(9);
         assertEquals(result, "Fizz");
     }
+
+    @Test
+    public void shoulReturnFizzBuzzWhenGiven15(){
+        String result = FizzBuzzConverter.convert(15);
+        assertEquals(result, "FizzBuzz");
+    }
 }
