@@ -41,4 +41,10 @@ public class FizzBuzzConverterTest {
         String result = FizzBuzzConverter.convert(8);
         assertEquals(result, "8");
     }
+
+    @Test
+    public void shoulReturnBuzzWhenGivenAMultipleOf5(){
+        String result = FizzBuzzConverter.convert(10);
+        assertEquals(result, "Buzz");
+    }
 }
