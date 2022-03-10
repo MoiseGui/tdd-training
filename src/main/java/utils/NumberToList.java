@@ -4,10 +4,16 @@ import java.util.List;
 
 public class NumberToList {
 
-    public static List<String> convert(int i) throws IllegalArgumentException{
+    public static List<Integer> convert(int i) throws IllegalArgumentException{
         if(i <= 0) {
             throw new IllegalArgumentException("0 is not a valid number");
         }
-        return null;
+
+
+        List<Integer> list = new java.util.ArrayList<>();
+        for(int j = 1; j <= i; j++) {
+            list.add(j);
+        }
+        return list;
     }
 }
