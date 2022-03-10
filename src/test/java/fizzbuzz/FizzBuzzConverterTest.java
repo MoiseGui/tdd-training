@@ -28,4 +28,11 @@ public class FizzBuzzConverterTest {
         String result = FizzBuzzConverter.convert(15);
         assertEquals(result, "FizzBuzz");
     }
+
+
+    @Test
+    public void shoulReturnFizzBuzzWhenGivenAMultipleOf15(){
+        String result = FizzBuzzConverter.convert(30);
+        assertEquals(result, "FizzBuzz");
+    }
 }
